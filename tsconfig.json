@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": false,
+    "target": "es6",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "removeComments": true,
+    "strict": true,
+//    "sourceMap": true,
+    "outDir": "dist",
+    "sourceRoot": "src",
+    "inlineSourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/",
+        "src/types/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.ts"
+  ]
+}
