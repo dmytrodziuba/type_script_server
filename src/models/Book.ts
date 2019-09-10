@@ -2,13 +2,13 @@ import * as mongoose from "mongoose";
 
 const uri: string = "mongodb://127.0.0.1:27017/local";
 
-mongoose.connect(uri, (err: any) => {
+mongoose.connect(uri, { useNewUrlParser: true }, (err: any) => {
     if (err) {
         console.log(err.message);
     } else {
         console.log("Successfully Connected!");
     }
-}).then(r => r);
+});
 
 export interface IBook extends mongoose.Document {
     title: string;
